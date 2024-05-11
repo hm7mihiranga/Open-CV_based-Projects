@@ -19,6 +19,7 @@ This is used to check the opencv version, I checked this because there are some 
 This use to open the image
 -img = cv2.imread('C:\\Users\\Hasitha\\Desktop\\kanikaSir\\IM\\preset-shapes.jpg')
 -plt.imshow(img)
+![add image one]('images/Screenshot 2024-05-10 005713.png')
 
 This is the way how to convert RGB image to Gray Color
 Uses of the greyscale images
