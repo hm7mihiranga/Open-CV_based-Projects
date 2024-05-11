@@ -1,4 +1,11 @@
-# This is the full package of opencv
+```diff
+- This line will appear red
++ This line will appear green
+! This line will appear orange
+# This line will appear gray
+@@ This line will appear purple (and bold) @@
+
+@@This is the full package of opencv@@
 pip install opencv-contrib-python   
 # This is the main packages of Opencv in here opencv-contribe python is the best practise
 pip install opencv-python 
