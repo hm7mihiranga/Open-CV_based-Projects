@@ -19,8 +19,9 @@ This is used to check the opencv version, I checked this because there are some 
 This use to open the image
 -img = cv2.imread('C:\\Users\\Hasitha\\Desktop\\kanikaSir\\IM\\preset-shapes.jpg')
 -plt.imshow(img)
-![add image one]('images/Screenshot 2024-05-10 005713.png')
-
+```
+ ![Image One](images/one.png)
+```diff
 This is the way how to convert RGB image to Gray Color
 Uses of the greyscale images
  • To reduce the processing complexity
@@ -29,19 +30,31 @@ Uses of the greyscale images
  • Reduce complexity and speed up the processing
 -gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 -plt.imshow(gray)
+```
+![Image Two](images/two.png)
 
+```diff 
 This method applying for the image, when the best practice of the machine learning model training because from this method can be improved the smoothiness of the image, like Noice reduction, Details Simplification(for the image blurring is affect to limit the details of the image so this is the preferred way of image preprocessing and image cleaning), and also this is help to edge smoothing concept, and another reason of this blur method it helps to image blending.
 -blurred = cv2.GaussianBlur(gray,(5,5),1)
 -plt.imshow(blurred)
+```
+![Image Three](images/three.png)
 
+```diff
 This canny edge concept is use to detect wide range of edges in the images. When adding gaussian blur method with this canny edge concept can be get the best result. It helps to noice reduction and gradient calculations (this canny edge concept cause to calculate the gradient of an image to find the edges intensity and direction)
 -edges = cv2.Canny(blurred,50,150)
 -plt.imshow(edges)
+```
+![Image four](images/four.png)
 
+```diff
 Threshold concept is used to identify foreground(objects or interest) getting separately from background based on pixel intensity values. In here the process is this convert the grayscale image to binary image like binary array either set to 0(black) to 255(white) based on specific threshold values.
 -_, thresh = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
 -plt.imshow(thresh)
+```
+![Image five](images/five.png)
 
+```diff
 This contour concept is used in the open-cv for detecting objects and drawing bounding boxes and also there are several uses from this contour like : shape analysis, Object Detection, Object Recognition, Image Segmentation, and the Boundary representation of the desired object of user. 
 -contours, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
@@ -93,7 +106,10 @@ Find Triangles with Draw the Bounding Boxes
 
  Given the Image to the find_triangles() functions.
 -find_triangles('C:\\Users\\Hasitha\\Desktop\\kanikaSir\\IM\\preset-shapes.jpg')
+```
+![Image six](images/six.png)
 
+```diff
 
  Find Squares with Draw the Bounding Boxes 
 -def find_squares(image_path):
@@ -147,7 +163,10 @@ Find Triangles with Draw the Bounding Boxes
 
  Giving the original image path
 -find_squares('C:\\Users\\Hasitha\\Desktop\\kanikaSir\\IM\\preset-shapes.jpg')
+```
+![Image seven](images/seven.png)
 
+```diff
 
  Find Circle with Draw the Bounding Boxes as Circle
 -def find_circle(image_path):
@@ -188,3 +207,5 @@ Find Triangles with Draw the Bounding Boxes
 
  Giving the original image path
 -find_circle('C:\\Users\\Hasitha\\Desktop\\kanikaSir\\IM\\preset-shapes.jpg')
+```
+![Image eight](images/eight.png)
